@@ -19,7 +19,7 @@ class App extends Component{
 
   getFeaturedList(){
     const BASE_URL_FEATURED = 'https://api.spotify.com/v1/browse/new-releases';
-    var access_token = 'BQAA9cVmWL7uyUxiNQT_FgCkV_6sbJf7FjcNWMHc5wJupPs58CQ647P7GuPCOtwFqJ6JIKTAeq0v37J-DDNdfh3KFbYZRP8nQuFJ8fZCBzKu_jmTDXQI1oKVGevSxg6zIhm4KeRprgk3Toof0qNbLiUjDrG0WymfHtvdHKYYsrrCKt4o4g';
+    var access_token = 'BQAfS2Ypj5ScH4zAMtFyC3I_79ofYIvrwDeY9PBQEn_YjPBHHwCMkmIqqos0Om7YspxRPN7l23QTwvpU2KRekj8onczET-KUeKsnQLtjZYqN709sI_CeQQimxJx48hqS36HOI_9yxWxrtTPORFBcuGIY5gEcfqOJUbzNOZC8AW50WH-tMQ';
 
     var myOptions = {
     method: 'GET',
@@ -43,7 +43,7 @@ class App extends Component{
 
     let FETCH_URL = `${BASE_URL}q=${this.state.query}&type=artist&limit=1`;
     const ALBUM_URL = 'https://api.spotify.com/v1/artists/';
-    var access_token = 'BQAA9cVmWL7uyUxiNQT_FgCkV_6sbJf7FjcNWMHc5wJupPs58CQ647P7GuPCOtwFqJ6JIKTAeq0v37J-DDNdfh3KFbYZRP8nQuFJ8fZCBzKu_jmTDXQI1oKVGevSxg6zIhm4KeRprgk3Toof0qNbLiUjDrG0WymfHtvdHKYYsrrCKt4o4g'
+    var access_token = 'BQAfS2Ypj5ScH4zAMtFyC3I_79ofYIvrwDeY9PBQEn_YjPBHHwCMkmIqqos0Om7YspxRPN7l23QTwvpU2KRekj8onczET-KUeKsnQLtjZYqN709sI_CeQQimxJx48hqS36HOI_9yxWxrtTPORFBcuGIY5gEcfqOJUbzNOZC8AW50WH-tMQ'
     console.log(FETCH_URL);
 
       var myOptions = {
