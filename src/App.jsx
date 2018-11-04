@@ -112,7 +112,7 @@ class App extends Component{
   }
 
   render(){
-    console.log(this.state);
+    this.getFeaturedList();
     return(
       <div className="">
       {
