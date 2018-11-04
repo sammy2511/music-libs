@@ -48,24 +48,22 @@ class App extends Component{
   }
 
   getFeaturedList(){
+    const BASE_URL_FEATURED = 'https://api.spotify.com/v1/browse/new-releases';
+    var myOptions = {
+    method: 'GET',
+    headers: {
+      'Authorization': 'Bearer ' + this.state.access_token
+    },
+    mode: 'cors',
+    cache: 'default'
+    };
 
-
-    // const BASE_URL_FEATURED = 'https://api.spotify.com/v1/browse/new-releases';
-    // var myOptions = {
-    // method: 'GET',
-    // headers: {
-    //   'Authorization': 'Bearer ' + this.state.access_token
-    // },
-    // mode: 'cors',
-    // cache: 'default'
-    // };
-    //
-    // fetch(BASE_URL_FEATURED,myOptions)
-    //   .then(response => response.json())
-    //   .then(json => {
-    //     const albums = json.albums;
-    //     this.setState({ albums });
-    //   })
+    fetch(BASE_URL_FEATURED,myOptions)
+      .then(response => response.json())
+      .then(json => {
+        const albums = json.albums;
+        this.setState({ albums });
+      })
   }
 
   searchArtist(){
@@ -161,10 +159,10 @@ class App extends Component{
                             <Gallery
                               tracks = {this.state.tracks}
                             />
-                          </div>:<div></div>
-                            // : <FeaturedContent
-                            //   albums = {this.state.albums}
-                            // />
+                          </div>:<div>
+                             <FeaturedContent
+                              albums = {this.state.albums}
+                            /></div>
         }
       </div>
       </div>
