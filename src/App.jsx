@@ -126,7 +126,7 @@ class App extends Component{
           </div>
       }
         <div className="App">
-        <div className="App-title">Music Library Application</div>
+        <div className="App-title">Music Libs</div>
         <FormGroup>
           <InputGroup>
             <FormControl
